@@ -20,7 +20,7 @@ const App = () => {
 
   const calculateHandler = () => {
     try{
-      setResult(eval(result).toString())
+      setResult(Number(eval(result).toString()).toFixed(9))
 
     }catch(err) {
       setResult("Error")
